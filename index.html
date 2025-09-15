@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"></link>
+  <title>Kelime Tahmin Oyunu</title>
+</head>
+
+<body>
+  <div class="selectDiv">
+    <button onclick="selectMenuToggle()">
+      ☰ Select 
+    </button>
+    <div id="selectMenu" style="display:none" onchange="secileniYazdir()">
+      <button id="kolayO">Meyve (Kolay)</button>
+      <button id="ortaO">Eşya (Orta)</button>
+      <button id="zorO">Hayvan (Zor)</button>
+    </div>
+  </div>
+  <hr>
+  <div class="bilgiler">
+    <h4 id="kategori">Meyve (Kolay)</h4>
+    <span id="kalanHak">5 Hak</span>
+    <span id="puan">Puan: 0</span>
+  </div>
+  <div class="inputDiv">
+    <input id="textInput" type="text" placeholder="Tahmininizi girin...">
+    <input id="submitBtn" type="submit">
+  </div>
+  <div id=sonucSonDiv>
+    <p id=sonucSon>Oyun başladı.</p>
+  </div>
+  <div id="sonuclar">
+    <p>Tahminler Listesi:</p>
+    <ul id="listeLog">
+    <!--Buraya js ile sonuçlar listesi gelecek-->
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
